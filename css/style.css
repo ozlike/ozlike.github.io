@@ -1,0 +1,33 @@
+.row div{
+    background: 	#FFD700;
+}
+
+.h1{
+	color: rebeccapurple;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.h2{
+	color: rebeccapurple;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.h3{
+	color: green;
+    text-align: center;
+}
+
+.h4{
+	color: black;
+    text-align: left;
+}
+
+.navbar-nav {
+float: none;
+text-align: center;
+}
+
+.navbar-nav li {
+float: none;
+display: inline-block;
+}
