@@ -66,15 +66,12 @@
                      
                      
                      
+                 <div class="container-fluid" height = "555">   
                      
-                     
-                     
-                     
-                     
-                     
-                     
+                      
 <div id="before-load">
-<i class="fa fa-spinner fa-spin">
+<br/><br/><br/><br/><br/><br/>
+<i>
 <style>
 .loader {
  display: block;
@@ -322,23 +319,23 @@
 </i> 
 </div>
                      
+                     <br/><br/>
                      
                      
                      
-                     
-                     
-                     
-                     
-                      <br/>
                        <div id= "map" class="collapse">
                         <center>
                            <iframe class="centre" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1093.4356749508213!2d37.13877403790999!3d56.762345998096066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b4423a456264db%3A0x98c20e955bc9c4d0!2z0YPQuy4g0KLQstC10YDRgdC60LDRjywgNiwg0JTRg9Cx0L3QsCwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7LiwgMTQxOTgz!5e0!3m2!1sru!2sru!4v1486833445185" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </center> 
                       
                     </div>
+                     <br/><br/><br/><br/><br/><br/>
                      
                      
                      
+                     
+                     
+                 </div> 
                      
                       
                   </div>
@@ -354,18 +351,16 @@
         $(window).load(function() {
   $('#before-load').find('i').fadeOut().end().delay(400).fadeOut('slow'); 
 });
-    </script>
-    
-    
-     <script>
-      $(function(){
-          $('#map').collapse();
-      });
+      
       </script>
      
-     
-  
-    
+    <script>
+        $(function(){
+          setTimeout(function(){
+                    $('#map').collapse();
+          },1500);
+      });
+    </script>    
     
     
     
