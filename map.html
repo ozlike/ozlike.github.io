@@ -12,7 +12,7 @@
     
   </head>
   <body>
-     
+    
     <div class="container-fluid">
        <div class="row">
            <div class="col-lg-3 col-md-2 col-sm-1 col-xs-0"></div>
@@ -39,11 +39,264 @@
                 <div class="container-fluid">
              
                  <a href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%A2%D0%B2%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F,+6,+%D0%94%D1%83%D0%B1%D0%BD%D0%B0,+%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,+141983/@56.762346,37.138774,18z/data=!3m1!4b1!4m5!3m4!1s0x46b4423a456264db:0x98c20e955bc9c4d0!8m2!3d56.762346!4d37.1394639?hl=ru" class="h1">Карта Google</a>      
-                 
-                  <div class="row"> 
-                      <center>
-                           <iframe class="centre" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1093.4356749508213!2d37.13877403790999!3d56.762345998096066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b4423a456264db%3A0x98c20e955bc9c4d0!2z0YPQuy4g0KLQstC10YDRgdC60LDRjywgNiwg0JTRg9Cx0L3QsCwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7LiwgMTQxOTgz!5e0!3m2!1sru!2sru!4v1486833445185" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                      </center>
+                 <br/>
+                  <div class="row" id="fixrow"> 
+                               
+<div id="before-load">
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<i>
+<style>
+.loader {
+ display: block;
+ margin: 30px auto;
+ position: relative;
+ width: 100px;
+ height: 100px;
+}
+.loader span {
+ display: block;
+ position: absolute;
+ width: 50%;
+ height: 50%;
+}
+.loader span:nth-child(1) {
+ top: 0;
+ left: 0;
+ background-color: #f38630;
+ -webkit-animation: loading1 2s linear infinite;
+ animation: loading1 2s linear infinite;
+}
+.loader span:nth-child(2) {
+ top: 0;
+ right: 0;
+ background: #588c73;
+ -webkit-animation: loading2 2s linear infinite;
+ animation: loading2 2s linear infinite;
+}
+.loader span:nth-child(3) {
+ bottom: 0;
+ left: 0;
+ background: #9b539c;
+ -webkit-animation: loading3 2s linear infinite;
+ animation: loading3 2s linear infinite;
+}
+.loader span:nth-child(4) {
+ bottom: 0;
+ right: 0;
+ background: #d94e67;
+ -webkit-animation: loading4 2s linear infinite;
+ animation: loading4 2s linear infinite;
+}
+@-webkit-keyframes loading1 {
+ 0% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+ z-index: 10;
+ }
+ 25% {
+ -webkit-transform: translate(100%, 0);
+ transform: translate(100%, 0);
+ }
+ 50% {
+ -webkit-transform: translate(100%, 100%);
+ transform: translate(100%, 100%);
+ }
+ 75% {
+ -webkit-transform: translate(0, 100%);
+ transform: translate(0, 100%);
+ z-index: 0;
+ }
+ 100% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+ }
+}
+@keyframes loading1 {
+ 0% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+ z-index: 10;
+ }
+ 25% {
+ -webkit-transform: translate(100%, 0);
+ transform: translate(100%, 0);
+ }
+ 50% {
+ -webkit-transform: translate(100%, 100%);
+ transform: translate(100%, 100%);
+ }
+ 75% {
+ -webkit-transform: translate(0, 100%);
+ transform: translate(0, 100%);
+ z-index: 0;
+ }
+ 100% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+ }
+}
+@-webkit-keyframes loading2 {
+ 0% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+ }
+ 25% {
+ -webkit-transform: translate(0, 100%);
+ transform: translate(0, 100%);
+ }
+ 50% {
+ -webkit-transform: translate(-100%, 100%);
+ transform: translate(-100%, 100%);
+ z-index: 0;
+ }
+ 75% {
+ -webkit-transform: translate(-100%, 0);
+ transform: translate(-100%, 0);
+ z-index: 10;
+ }
+ 100% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+ }
+}
+@keyframes loading2 {
+ 0% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+ }
+ 25% {
+ -webkit-transform: translate(0, 100%);
+ transform: translate(0, 100%);
+ }
+ 50% {
+ -webkit-transform: translate(-100%, 100%);
+ transform: translate(-100%, 100%);
+ z-index: 0;
+ }
+ 75% {
+ -webkit-transform: translate(-100%, 0);
+ transform: translate(-100%, 0);
+ z-index: 10;
+ }
+ 100% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+ }
+}
+@-webkit-keyframes loading3 {
+ 0% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+ }
+ 25% {
+ -webkit-transform: translate(0, -100%);
+ transform: translate(0, -100%);
+ z-index: 10;
+ }
+ 50% {
+ -webkit-transform: translate(100%, -100%);
+ transform: translate(100%, -100%);
+ }
+ 75% {
+ -webkit-transform: translate(100%, 0);
+ transform: translate(100%, 0);
+ }
+ 100% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+ z-index: 0;
+ }
+}
+@keyframes loading3 {
+ 0% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+ }
+ 25% {
+ -webkit-transform: translate(0, -100%);
+ transform: translate(0, -100%);
+ z-index: 10;
+ }
+ 50% {
+ -webkit-transform: translate(100%, -100%);
+ transform: translate(100%, -100%);
+ }
+ 75% {
+ -webkit-transform: translate(100%, 0);
+ transform: translate(100%, 0);
+ }
+ 100% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+ z-index: 0;
+ }
+}
+@-webkit-keyframes loading4 {
+ 0% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+ }
+ 25% {
+ -webkit-transform: translate(-100%, 0);
+ transform: translate(-100%, 0);
+ z-index: 0;
+ }
+ 50% {
+ -webkit-transform: translate(-100%, -100%);
+ transform: translate(-100%, -100%);
+ z-index: 10;
+ }
+ 75% {
+ -webkit-transform: translate(0, -100%);
+ transform: translate(0, -100%);
+ }
+ 100% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+ }
+}
+@keyframes loading4 {
+ 0% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+ }
+ 25% {
+ -webkit-transform: translate(-100%, 0);
+ transform: translate(-100%, 0);
+ z-index: 0;
+ }
+ 50% {
+ -webkit-transform: translate(-100%, -100%);
+ transform: translate(-100%, -100%);
+ z-index: 10;
+ }
+ 75% {
+ -webkit-transform: translate(0, -100%);
+ transform: translate(0, -100%);
+ }
+ 100% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+ }
+}
+</style>
+
+<div class="container-fluid">
+ <div class="loader">
+ <span></span>
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+</div>  
+</i> 
+</div>
+                     <br/><br/>
+                       <div id= "map" class="collapse">
+                        <center>
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1093.4356749508213!2d37.13877403790999!3d56.762345998096066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b4423a456264db%3A0x98c20e955bc9c4d0!2z0YPQuy4g0KLQstC10YDRgdC60LDRjywgNiwg0JTRg9Cx0L3QsCwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7LiwgMTQxOTgz!5e0!3m2!1sru!2sru!4v1486833445185" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </center> 
+                    </div>
                   </div>
                 </div>
            </div>
@@ -51,27 +304,60 @@
        </div> 
     </div>  
     
-          
-               
-           
-               
-               
-                                     
-                                              
-                                                    
-                                                          
-                                                                
-                                                                      
-                                                                            
-                                                                                  
-                                                                                        
-             
-                                                                                                                                                                              
-                                                                                                    
-                                                                                                          
-                                                                                                                      
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script>
+        $(window).load(function() {
+  $('#before-load').find('i').fadeOut().end().delay(400).fadeOut('slow'); 
+});
+      </script>
+     
+    <script>
+        $(function(){
+          setTimeout(function(){
+                    $('#map').collapse();
+          },1500);
+      });
+    </script>    
+    
     <script src="js/bootstrap.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
