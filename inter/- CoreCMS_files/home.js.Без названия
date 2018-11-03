@@ -1,0 +1,87 @@
+var scrolled, vector, anchors, timer,
+boost = 0, lastTime = false, scrolling = false;
+var debugDiv;
+
+document.addEventListener("DOMContentLoaded", function () {
+    scrolled = window.pageYOffset;
+    anchors = document.getElementsByClassName("anchor");
+    //creareDebugDiv();
+    
+    fixLastScreen();
+    window.addEventListener("resize", function () {
+        fixLastScreen();
+    });
+
+    window.addEventListener("scroll", function () {
+        if (lastTime) {
+            lastTime = false;
+            boost = 0;
+            scrolled = window.pageYOffset;
+            return;
+        }
+        if (scrolling) {
+            if (scrolled == window.pageYOffset) {
+                scrolling = false;
+                clearTimeout(timer);
+                boost = 0;
+                scrolled = window.pageYOffset;
+                return;
+            }
+
+            if (vector == 1) {
+                if (scrolled > window.pageYOffset) {
+                    vector = -1;
+                    boost = 0;
+                }
+            }
+            else {
+                if (scrolled < window.pageYOffset) {
+                    vector = 1;
+                    boost = 0;
+                }
+            }
+            scrolled = window.pageYOffset;
+            return;
+        }
+        boost = 0;
+        if (scrolled < window.pageYOffset) {
+            scrolling = true;
+            vector = 1;
+            autoScrolling();
+        }
+        if (scrolled > window.pageYOffset) {
+            scrolling = true;
+            vector = -1;
+            autoScrolling();
+        }
+        scrolled = window.pageYOffset;
+    });
+});
+
+function fixLastScreen() {
+    anchors[anchors.length - 1].style.height =
+        "calc(100vh - " + (document.getElementById("footerr").clientHeight + 18) + "px)";
+}
+
+function autoScrolling() {
+    for (var i = 0; i < anchors.length; i++) {
+        if (Math.abs(window.pageYOffset - anchors[i].offsetTop) <= boost * boost) {
+            lastTime = true;
+            scrolling = false;
+            scrolled = window.pageYOffset;
+            window.scrollTo(0, anchors[i].offsetTop);
+            return;
+        }
+    }
+    //debugDiv.innerHTML = "boost: " + boost;
+    if (boost < 50) boost += 0.4;
+    window.scrollBy(0, vector * boost * boost);
+    timer = setTimeout(window.requestAnimationFrame(autoScrolling), 1);
+}
+
+function creareDebugDiv() {
+    debugDiv = document.createElement("div");
+    document.body.appendChild(debugDiv);
+    debugDiv.style = "position: fixed; right: 0; top: 0; color: red";
+    debugDiv.innerHTML = "scroll";
+}
