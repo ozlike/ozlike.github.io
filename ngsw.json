@@ -1,0 +1,93 @@
+{
+  "configVersion": 1,
+  "timestamp": 1696748067431,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.dc87d3c04b2fb360.js",
+        "/manifest.webmanifest",
+        "/polyfills.2af42407135facc2.js",
+        "/runtime.00285116a9b7ab64.js",
+        "/styles.6f4c2c8879498d79.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/images/wooordhunt-logo.jpg",
+        "/assets/svg/speaker.svg",
+        "/assets/svg/subject.svg",
+        "/speaker.78ff8cc9fce7efed.svg",
+        "/subject.fedd34fa33dc01d7.svg",
+        "/wooordhunt-logo.ec05fd2e68441807.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/assets/images/wooordhunt-logo.jpg": "0b5c3bf5286018a950c67880626846c192c88796",
+    "/assets/svg/speaker.svg": "a411353b1a7bcdf01bbdf63d9148ae29a6f8cc56",
+    "/assets/svg/subject.svg": "4e7f27c491e60dd661e3ec10bdf999032a7096be",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "bb5a2f5ed7740002d674b241ade1083293cb117d",
+    "/main.dc87d3c04b2fb360.js": "cf5af07006bd5d0e0e5e7128c5110f1fb824d37a",
+    "/manifest.webmanifest": "ab10089b1f01ba28dadb47b9288db3fe06169b94",
+    "/polyfills.2af42407135facc2.js": "1910717863d779b8539506b5804793ff56131cda",
+    "/runtime.00285116a9b7ab64.js": "ec0ba36e06cd072365aeaf1afc2ee98af153e080",
+    "/speaker.78ff8cc9fce7efed.svg": "a411353b1a7bcdf01bbdf63d9148ae29a6f8cc56",
+    "/styles.6f4c2c8879498d79.css": "fde8bb61af1e44a70dc6e2b02f80c87dee6c23be",
+    "/subject.fedd34fa33dc01d7.svg": "4e7f27c491e60dd661e3ec10bdf999032a7096be",
+    "/wooordhunt-logo.ec05fd2e68441807.jpg": "0b5c3bf5286018a950c67880626846c192c88796"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
