@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1699205654561,
+  "timestamp": 1699215726926,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -12,7 +12,7 @@
       },
       "urls": [
         "/index.html",
-        "/main.fb242377809fd88a.js",
+        "/main.2cf08bf0d1a22046.js",
         "/manifest.webmanifest",
         "/polyfills.2af42407135facc2.js",
         "/runtime.00285116a9b7ab64.js",
@@ -61,8 +61,8 @@
     "/assets/images/wooordhunt-logo.jpg": "0b5c3bf5286018a950c67880626846c192c88796",
     "/assets/svg/speaker.svg": "a411353b1a7bcdf01bbdf63d9148ae29a6f8cc56",
     "/assets/svg/subject.svg": "4e7f27c491e60dd661e3ec10bdf999032a7096be",
-    "/index.html": "8826f967a6f6dcd5d8e260b5da85c83dbfe6e71b",
-    "/main.fb242377809fd88a.js": "511699a21dc133ab669c38681ac6d330843088a6",
+    "/index.html": "923a83c626143a5df99283d99199c27aff5a1504",
+    "/main.2cf08bf0d1a22046.js": "e600bcdf44995eba6c2f0ad4914c3a309b9045d1",
     "/manifest.webmanifest": "ab10089b1f01ba28dadb47b9288db3fe06169b94",
     "/polyfills.2af42407135facc2.js": "1910717863d779b8539506b5804793ff56131cda",
     "/runtime.00285116a9b7ab64.js": "ec0ba36e06cd072365aeaf1afc2ee98af153e080",
